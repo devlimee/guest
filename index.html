@@ -34,29 +34,73 @@ Author: limee
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="cookiealert-dependencies.js"></script>
+	<link href="style.css" rel="stylesheet">
+    <!-- Bootstrap 4.1.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+
+    <!-- cookiealert styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
 </head>
 	
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
-	
+
 <style>
-::-webkit-scrollbar {
-  width: 10px;
+.alert {
+  padding: 20px;
+  background-color: #36c1e0;
+  color: white;
 }
 
-::-webkit-scrollbar-track {
-  background: grey; 
-}
- 
-::-webkit-scrollbar-thumb {
-  background: #36c1e0; 
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+.closebtn:hover {
+  color: black;
 }
 </style>
+
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+
+    var div = this.parentElement;
+
+    div.style.opacity = "0";
+
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+
+<!-- START Bootstrap-Cookie-Alert -->
+<div class="alert text-center cookiealert" role="alert">
+    <b>Kérjük, forrás megjelölése nélkül ne használja fel a weboldalon található képeket, szövegeket.</b>
+
+    <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+        Megértettem
+    </button>
+</div>
+<!-- END Bootstrap-Cookie-Alert -->
+
+
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <center><strong>Információ!</strong> A KIFÜ elkezdte letiltatni a <strong>GUEST_VENDEG</strong> jelszó kiadós oldalakat, azonban Mi továbbra is működünk!</center>
+</div>
 
 <body bgcolor="#232323">
 <body class="w3-light-grey">
@@ -99,7 +143,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <!-- Start of CuterCounter Code -->
 <center><h4 style="color:blue;">Látogatók száma:</h4><a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=gumqqnop&nd=6&style=39" border="0" alt="hit counter"></a></center>
 <!-- End of CuterCounter Code -->
+<p> </p>
 <center><h4 style="color:grey;">© Copyright 2019 | Website created by: limee.</h4></center>
-		
+
+<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+
 </body>
 </html>
