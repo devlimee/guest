@@ -43,6 +43,24 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Teko", sans-serif}
 </style>
 
 <style>
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: grey; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #2082b3; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+</style>
+
+<style>
 .alert {
   padding: 20px;
   background-color: #36c1e0;
@@ -93,7 +111,7 @@ for (i = 0; i < close.length; i++) {
 <div class="alert">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
   <center>Információ! A KIFÜ elkezdte letiltatni a GUEST_VENDEG jelszó kiadós oldalakat, azonban Mi továbbra is működni fogunk!
-	  Partnerünk: <a href="https://discord.gg/J7p5QEF">Suli WiFi jelszavak</a></center>
+	  Partnerünk <a href="https://discord.gg/J7p5QEF">Suli WiFi jelszavak</a></center>
 </div>
 
 <body bgcolor="#232323">
@@ -103,12 +121,7 @@ for (i = 0; i < close.length; i++) {
 
 <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
     <center><h6 style="color:grey;">KIFÜ Privát(Teszt) Hálózat</center>
-    <tr>
-       <td style="color:black;">SSID; GUEST_VENDEG</td>
-	   <td style="color:black;">Felhasználónév; test</td>
-	   <td style="color:black;">Jelszó; test123</td>
-	   <td style="color:black;">Érvényesség; ismeretlen</td>
-    </tr>
+       <center><td style="color:black;">SSID; GUEST_VENDEG<br>Felhasználónév; test<br>Jelszó; test123<br>Érvényesség; ismeretlen</br></td></center>
     </table><br>	
 
 <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
