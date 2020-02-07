@@ -1,4 +1,10 @@
+body {
+  font-family: 'Source Sans Pro';
+}
 
+td {
+  font-family: 'Source Sans Pro';
+}
 
 .alert {
   padding: 20px;
@@ -32,4 +38,41 @@
 
 .scroll {
   min-height: 1500px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: grey; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #2082b3; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.alert {
+  padding: 20px;
+  background-color: #36c1e0;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
 }
