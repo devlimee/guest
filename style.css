@@ -1,9 +1,17 @@
 body {
-  font-family: 'Source Sans Pro';
+  font-family: 'Oswald';
 }
 
 td {
-  font-family: 'Source Sans Pro';
+  font-family: 'Oswald';
+}
+
+a {
+  font-family: 'Fira Sans';
+}
+
+td .center {
+	text-align: center;
 }
 
 .alert {
