@@ -10,10 +10,6 @@ a {
   font-family: 'Fira Sans';
 }
 
-td .center {
-	text-align: center;
-}
-
 .alert {
   padding: 20px;
   background-color: #36c1e0;
