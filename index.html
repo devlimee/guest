@@ -3,15 +3,17 @@
 
 <!--
 Website name: kifuadatok
-Copyright : COPYRIGHT © 2020. ALL RIGHTS RESERVED. WEBSITE CREATED BY LIMEE
+Copyright : COPYRIGHT © 2020. ALL RIGHTS RESERVED. WEBSITE CREATED BY LIMEE & THEINFINITECODE
  -->
 
 <head>
     <title>KIFÜ Adatok</title>
+    <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Ezen a weboldalon megtalálhatod a GUEST_VENDEG (suli internet) jelszavát. Minden hónapban frissül a weboldal.">
-    <meta name="theme-color" content="#36c1e0" />
+    <meta name="theme-color" content="#36c1e0"/>
+	
     <meta property="og:description" content="Ezen a weboldalon megtalálhatod a GUEST_VENDEG (suli internet) jelszavát. Minden hónapban frissül a weboldal.">
     <meta property="og:title" content="KIFÜ Adatok">
     <meta property="og:site_name" content="KIFÜ">
@@ -19,130 +21,157 @@ Copyright : COPYRIGHT © 2020. ALL RIGHTS RESERVED. WEBSITE CREATED BY LIMEE
     <meta property="og:locale" content="hu_hu">
     <meta property="og:url" content="https://kifuadatok.tk">
     <meta property="og:image" content="https://kifuadatok.tk/kifu.png">
+	
     <link rel="schema.DC" href="https://purl.org/dc/elements/1.1/">
     <link rel="schema.DCTERMS" href="https://purl.org/dc/terms/">
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="shortcut icon" type="image/png" href="kifu.png">
+	
     <meta name="DC.title" content="KIFÜ Adatok">
-    <meta name="DC.creator" content="limee">
+    <meta name="DC.creator" content="limee, TheInfiniteCode">
     <meta name="DC.date" content="2020">
     <meta name="DC.type" content="website">
     <meta name="DC.language" content="hu">
     <meta name="keywords" content="guest_vendeg, guest, guestvendeg, vendegguest, suli internet, internet, suliinternet, school, school password, password, gustvendeg, Guest_Vendeg, suliwif, wifi">
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-    <link rel="shortcut icon" type="image/png" href="kifu.png">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
 </head>
 
-<script>
-var close = document.getElementsByClassName("closebtn");
-var i;
+<body>
+    <div class="showcase">
+        <div class="showcase-content">
+            <h1>KIFÜ Adatok</h1>
+            <p style="color:#9e9e9e;">Találd meg iskolád internetének jelszavát!</p>
+            <a href="#adatok"><button>ÉRDEKEL</button></a>
+        </div>
+    </div>
+	
+    <div id="adatok">
+        <table style="width:100%">
+            <tr>
+                <th>Év</th>
+                <th>Hónap</th>
+                <th>Jelszó</th>
+                <th>Státusz</th>
+            </tr>
+			
+            <tr>
+                <td>2019</td>
+                <td>január - február</td>
+                <td><div class="popup" onclick="showPopup(this);copy(this);">MNY4V4KV<span class="popuptext">Másolva</span></div></td>
+                <td class="expired">Lejárt</td>
+            </tr>
+			
+            <tr>
+                <td>2019</td>
+                <td>február - március</td>
+                <td><div class="popup" onclick="showPopup(this);copy(this);">TMHAH1A1<span class="popuptext">Másolva</span></div></td>
+                <td class="expired">Lejárt</td>
+            </tr>
+			
+            <tr>
+                <td>2019</td>
+                <td>március - április</td>
+                <td><div class="popup" onclick="showPopup(this);copy(this);">3VEVKNYF<span class="popuptext">Másolva</span></div></td>
+                <td class="expired">Lejárt</td>
+            </tr>
+			
+            <tr>
+                <td>2019</td>
+                <td>április - május</td>
+                <td><div class="popup" onclick="showPopup(this);copy(this);">TSL4NYNS<span class="popuptext">Másolva</span></div></td>
+                <td class="expired">Lejárt</td>
+            </tr>
+			
+            <tr>
+                <td>2019</td>
+                <td>május - június</td>
+                <td><div class="popup" onclick="showPopup(this);copy(this);">3DK4KLFL<span class="popuptext">Másolva</span></div></td>
+                <td class="expired">Lejárt</td>
+            </tr>
+			
+            <tr>
+                <td>2019</td>
+                <td>június - július - augusztus</td>
+                <td><div class="popup" onclick="showPopup(this);copy(this);">M1HCS4MG<span class="popuptext">Másolva</span></div></td>
+                <td class="expired">Lejárt</td>
+            </tr>
+			
+            <tr>
+                <td>2019</td>
+                <td>szeptember - október</td>
+                <td><div class="popup" onclick="showPopup(this);copy(this);">NASAS1SH<span class="popuptext">Másolva</span></div></td>
+                <td class="expired">Lejárt</td>
+            </tr>
+			
+            <tr>
+                <td>2019</td>
+                <td>október - november</td>
+                <td><div class="popup" onclick="showPopup(this);copy(this);">MNT2KFVT<span class="popuptext">Másolva</span></div></td>
+                <td class="expired">Lejárt</td>
+            </tr>
+			
+            <tr>
+                <td>2019</td>
+                <td>november - december</td>
+                <td><div class="popup" onclick="showPopup(this);copy(this);">LFSMVP3H<span class="popuptext">Másolva</span></div></td>
+                <td class="expired">Lejárt</td>
+            </tr>
+			
+            <tr>
+                <td>2019</td>
+                <td>december - január</td>
+                <td><div class="popup" onclick="showPopup(this);copy(this);">T4KHMKKV<span class="popuptext">Másolva</span></div></td>
+                <td class="expired">Lejárt</td>
+            </tr>
+			
+            <tr>
+                <td>2020</td>
+                <td>január - február</td>
+                <td><div class="popup" onclick="showPopup(this);copy(this);">EUH4GMFS<span class="popuptext">Másolva</span></div></td>
+                <td class="expired">Lejárt</td>
+            </tr>
+			
+            <tr>
+                <td>2020</td>
+                <td>február - március</td>
+                <td><div class="popup" onclick="showPopup(this);copy(this);">1C1LVTAV<span class="popuptext">Másolva</span></div></td>
+                <td class="expired">Lejárt</td>
+            </tr>
+			
+            <tr>
+                <td>2020</td>
+                <td>március - április</td>
+                <td><div class="popup" onclick="showPopup(this);copy(this);">LVNLE14K<span class="popuptext">Másolva</span></div></td>
+                <td class="expired">Lejárt</td>
+            </tr>
+			
+			<tr>
+                <td>2020</td>
+                <td>szeptember - október</td>
+                <td><div class="popup" onclick="showPopup(this);copy(this);">NYHKFNM3<span class="popuptext">Másolva</span></div></td>
+                <td class="active">Aktív</td>
+            </tr>
+			
+        </table>
+    </div>
+	
+    <div class="msg">
+        <p>Ha a bejelentkezésnél hibát ír, ellenőrizd, hogy a jelszóban csak nagy betű szerepel-e.</p>
+    </div>
 
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function(){
+	<!-- Start of CuterCounter Code -->
+    <center><h4 style="color:#9c9c9c;">Látogatók száma</h4><a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hxxqpca&nd=6&style=4" border="0" alt="hit counter"></a></center>
+    <!-- End of CuterCounter Code -->
+	
+    <div style="height: 40px;"></div>
+    
+	<div class="footer">
+        <p style="color:#9c9c9c;">created by <a href="#" class="colored">limee & TheInfiniteCode</a></p>
+    </div>
 
-    var div = this.parentElement;
-
-    div.style.opacity = "0";
-
-    setTimeout(function(){ div.style.display = "none"; }, 600);
-  }
-}
-</script>
-
-<div class="alert text-center cookiealert" role="alert">
-    <b>Kérjük, forrás megjelölése nélkül ne használja fel a weboldalon található képeket, szövegeket.</b>
-
-    <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
-        Megértettem!
-    </button>
-</div>
-
-<div class="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-	<center><a>Információ! A Teszt hálózat neve és jelszava megváltozott. Alul láthatod az új nevet és jelszót.</a></center>
-</div>
-
-<body bgcolor="#232323">
-<body class="w3-light-grey">
-
-<div class="w3-container">
-
-<table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
-    <center><h6 style="color:grey;">KIFÜ Privát(Teszt) Hálózat</center>
-    <center><td style="color:black;">SSID: GUEST_VENDEG<br>Felhasználónév: kifutest<br>Jelszó: kifutest123<br>Érvényesség: ismeretlen</br></td></center>
-</table><br>	
-
-<table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
-      <center><h6 style="color:grey;">KIFÜ Jelszavak</center>
-      <tr>
-	    <td style="color:blue;">[2019]<td style="color:purple;"> január-február</td></td>
-        <td style="color:red;">MNY4V4KV [LEJÁRT]</td>
-      </tr>
-      <tr>
-        <td style="color:blue;">[2019]</td><td style="color:purple;"> február-március</td>
-        <td style="color:red;">TMHAH1A1 [LEJÁRT]</td>
-      </tr>
-      <tr>
-        <td style="color:blue;">[2019]</td><td style="color:purple;"> március-április</td>
-        <td style="color:red;">3VEVKNYF [LEJÁRT]</td>
-      </tr>
-      <tr>
-        <td style="color:blue;">[2019]</td><td style="color:purple;"> április-május</td>
-        <td style="color:red;">TSL4NYNS [LEJÁRT]</td>
-      </tr>
-      <tr>
-        <td style="color:blue;">[2019]</td><td style="color:purple;"> május-június</td>
-        <td style="color:red;">3DK4KLFL [LEJÁRT]</td>
-      </tr>
-      <tr>
-        <td style="color:blue;">[2019]</td><td style="color:purple;">június-július-augusztus</td>
-        <td style="color:red;">M1HCS4MG [LEJÁRT]</td>
-      </tr>
-      <tr>
-        <td style="color:blue;">[2019]</td><td style="color:purple;"> szeptember-október</td>
-        <td style="color:red;">NASAS1SH [LEJÁRT]</td>
-      </tr>
-      <tr>
-        <td style="color:blue;">[2019]</td><td style="color:purple;"> október-november</td>
-        <td style="color:red;">MNT2KFVT [LEJÁRT]</td>
-      </tr>
-      <tr>
-        <td style="color:blue;">[2019]</td><td style="color:purple;"> november-december</td>
-        <td style="color:red;">LFSMVP3H [LEJÁRT]</td>
-      </tr>
-      <tr>
-        <td style="color:blue;">[2019]<td style="color:purple;"> december-január</td>
-        <td style="color:red;">T4KHMKKV [LEJÁRT]</td>
-      </tr>      
-      <tr>
-        <td style="color:blue;">[2020] <td style="color:purple;">január - február</td>
-        <td style="color:red;">EUH4GMFS [LEJÁRT]</td>
-      </tr>
-      <tr>
-        <td style="color:blue;">[2020] <td style="color:purple;">február-március</td>
-        <td style="color:red;">1C1LVTAV [LEJÁRT]</td>
-      </tr>   
-      <tr>
-        <td style="color:blue;">[2020] <td style="color:purple;">március-április</td>
-        <td style="color:red;">LVNLE14K [LEJÁRT]</td>
-      </tr>    
-<tr>
-        <td style="color:blue;">[2020] <td style="color:purple;">szeptember-október</td>
-        <td style="color:green;">NYHKFNM3 [AKTÍV]</td>
-      </tr>    
-    </table><br>	
-<center><h4 style="color:blue;">Ha a bejelentkezésnél hibát ír, ellenőrizd, hogy a jelszóban csak nagy betű szerepel-e.</h4></center>
-<!-- Start of CuterCounter Code -->
-<center><h4 style="color:blue;">Látogatók száma</h4><a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=gumqqnop&nd=6&style=39" border="0" alt="hit counter"></a></center>
-<!-- End of CuterCounter Code -->
-<p> </p>
-<center><h4 style="color:grey;">© Copyright 2020 | Website created by limee.</h4></center>
-<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
-<script src="cookiealert-dependencies.js"></script>
-
+	<script src="main.js"></script>
 </body>
-</html>
