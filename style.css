@@ -1,82 +1,194 @@
-body {
-  font-family: 'Oswald';
+html 
+{
+    scroll-behavior: smooth;
 }
 
-td {
-  font-family: 'Oswald';
+body 
+{
+    background: #0f1113;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 
-a {
-  font-family: 'Fira Sans';
+::-webkit-scrollbar 
+{
+    display: none;
 }
 
-.alert {
-  padding: 20px;
-  background-color: #36c1e0;
-  color: white;
-  margin-bottom: 15px;
+.showcase 
+{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
+.showcase h1 
+{
+    font-weight: 400;
+    font-size: 40px;
 }
 
-.closebtn:hover {
-  color: black;
+.showcase p 
+{
+    font-size: 20px;
 }
 
-.bottom {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #ccc;
-  color: #fff
+.showcase .colored 
+{
+	color: #2cadd1;
 }
 
-.scroll {
-  min-height: 1500px;
+
+.showcase button 
+{
+	font-family: 'Oswald';
+	font-size: 15px;
+    padding: 9px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+	background-color: #baf0ff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
+.showcase button:hover 
+{
+    transition: 0.2s;
+    transform: scale(1.04);
+	background-color: #2cadd1;
+	color: black;
 }
 
-::-webkit-scrollbar-track {
-  background: grey; 
-}
- 
-::-webkit-scrollbar-thumb {
-  background: #2082b3; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+#adatok 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+	background-color: #090a0a;
 }
 
-.alert {
-  padding: 20px;
-  background-color: #36c1e0;
-  color: white;
+#adatok table 
+{
+    margin-top: 20px !important;
+	margin-bottom: 100px !important;
+    width: 80% !important;
+	border: 1px solid #282929 !important;
 }
 
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
+table 
+{
+	background-color: #101112;
+    border-collapse: collapse;
+    text-align: left;
+	color: #b5b5b5;
 }
 
-.closebtn:hover {
-  color: black;
+th, td 
+{
+    padding: 15px;
+    text-align: left;
+}
+
+tr:nth-child(1) 
+{
+    color: #625f5f;
+}
+
+tr:hover {background-color: #f5f5f523;}
+
+.footer 
+{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.footer a 
+{
+    text-decoration: none;
+    color: #2cadd1;
+}
+
+
+.popup 
+{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup .popuptext 
+{
+    visibility: hidden;
+    width: 100px;
+    background-color: rgb(36, 216, 141);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0 !important;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.popup .popuptext::after 
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .show 
+{
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.msg 
+{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 0px 20px;
+	color: #9c9c9c;
+}
+
+.expired
+{
+	color: #e34242;
+}
+
+.active
+{
+	color: #3cde6a
+}
+
+@-webkit-keyframes fadeIn 
+{
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn 
+{
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }
